@@ -16,7 +16,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-ㅇㅋ요!<br>
+ㅇㅋ요!장총명 깃허브 수정 테스트<br>
+수정테스트 1 입니다
 <%for(TestDTO testDTO : list){ %>
 	<%=testDTO.getAb() %>&nbsp;|&nbsp;<%=testDTO.getBc() %>
 <%} %>
