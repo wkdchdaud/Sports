@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CmmUtil.java&apos; to &apos;Sports/src/sports.com.util&apos;&#x0D;&#x0A;- Original project: &apos;SpringPRJ&apos;&#x0D;&#x0A;- Destination element: &apos;Sports/src/sports.com.util&apos;&#x0D;&#x0A;- Original element: &apos;poly.util.CmmUtil.java&apos;" description="Copy compilation unit" destination="=Sports/src&lt;sports.com.util" element1="/src&lt;poly.util{CmmUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1495632067356" units="1" version="1.0"/>
+</session>
