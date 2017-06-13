@@ -8,7 +8,7 @@ NoticeDTO rDTO = (NoticeDTO)request.getAttribute("rDTO");
 //공지글 정보를 못불러왔다면, 객체 생성
 if (rDTO==null){
 	rDTO = new NoticeDTO();
-
+//나는 제갈지수야 깃허브 테스트 1 
 }
 
 int access = 1; //(작성자 : 2 / 다른 사용자: 1) 
