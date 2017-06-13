@@ -4,6 +4,7 @@
 <configuration>
     <typeAliases>
     	<typeAlias type="sports.com.dto.TestDTO" alias="TestDTO"/>
+    	<typeAlias type="sports.com.dto.UserDTO" alias="UserDTO"/>
 		<!-- <typeAlias type="ac.kr.ft.com.dto.MenuComDTO" alias="MenuComDTO"/> -->
     </typeAliases>
 </configuration>

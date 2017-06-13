@@ -9,4 +9,8 @@ import sports.com.dto.TestDTO;
 public interface ComMapper {
 
 	List<TestDTO> getCommentList() throws Exception;
+
+	void tran1() throws Exception;
+
+	void tran2() throws Exception;
 }

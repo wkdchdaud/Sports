@@ -8,4 +8,6 @@ public interface IComService {
 
 	List<TestDTO> getCommentList() throws Exception;
 
+	void tran() throws Exception;
+
 }

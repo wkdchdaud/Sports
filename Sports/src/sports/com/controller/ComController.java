@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import sports.com.dto.TestDTO;
 import sports.com.service.IComService;
@@ -22,15 +23,20 @@ public class ComController {
 	@Resource(name = "ComService")
 	private IComService comService;
 	
-	@RequestMapping("main")
+	@RequestMapping(value="main",method=RequestMethod.GET)
 	public String busimain(HttpSession session, HttpServletRequest request, HttpServletResponse response,
 			ModelMap model) throws Exception {
 		log.info("Wellcom user/usermain");
-		log.info("Wellcom user/usermain");
-		log.info("Wellcom user/usermain");
-		log.info("Wellcom user/usermain");
 		List<TestDTO> list = comService.getCommentList();
 		model.addAttribute("list",list);
-		return "/index";
+		return "/main";
+	}
+	
+	@RequestMapping(value="tran",method=RequestMethod.GET)
+	public String tran(HttpSession session, HttpServletRequest request, HttpServletResponse response,
+			ModelMap model) throws Exception {
+		log.info("Wellcom tran");
+		comService.tran();
+		return "/tran";
 	}
 }

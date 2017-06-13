@@ -1,15 +1,10 @@
 package sports.com.service.impl;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
 import sports.com.dto.TestDTO;
@@ -26,5 +21,11 @@ public class ComService implements IComService{
 	@Override
 	public List<TestDTO> getCommentList() throws Exception {
 		return comMapper.getCommentList();
+	}
+
+	@Override
+	public void tran() throws Exception {
+		comMapper.tran1();
+		comMapper.tran2();
 	}
 }
